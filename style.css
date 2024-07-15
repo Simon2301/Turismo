@@ -1,13 +1,61 @@
-*{
+body, html {
+    margin: 0;
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    height: 200vh; 
+    scroll-behavior: smooth;
 }
-body {
-    background-image: url('');
-    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en el fondo */
-    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
-    margin: 0;
+
+.cover-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('image/atardecer.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    z-index: 10;
+    transition: top 0.3s ease-out;
+}
+
+.cover-text {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.scroll-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+ }
+.icon{
+    font-size: 1.5em;
+    color: #ffffff !important;
+}
+span{
+    color: #ffffff;
+}
+
+.content {
+    position: relative;
+    top: 100vh;
+    padding: 20px;
+    z-index: 1; 
 }
